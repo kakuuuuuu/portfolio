@@ -52,7 +52,7 @@ body
     font-size: 4em !important;
   }
   #title{
-    font-size: 2.5em !important;
+    font-size: 3em !important;
   }
   .abtpictures{
     margin: 10% auto !important;
@@ -75,14 +75,13 @@ body
     height: 40vmin !important;
   }
   .tech{
-    max-width: 26% !important;
+    margin-bottom: 10%;
   }
 }
 @media(max-width: 1000px){
   #slide01,#slide02,#slide03{
     border-bottom-style: inset !important;
     border-bottom-color: #8D9296 !important;
-    border-width: 3px !important;
     height: auto !important;
     min-height: 0 !important;
   }
@@ -90,7 +89,7 @@ body
     font-size: 1.3em !important;
   }
   .projtext{
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
   }
   .spacer, .downproj{
     display: none !important;
@@ -105,12 +104,22 @@ body
     border-width: 0.5 !important;
     height: auto !important;
   }
+  #mapshareios{
+    border-bottom-style: none !important;
+    padding: 5% !important;
+  }
   #projtitle{
     text-align: center;
   }
   #skilldescript{
     text-align: center !important;
     margin-top: 2% !important;
+  }
+  #skillheading{
+    font-size: 2.5em !important;
+  }
+  #skilltext{
+    font-size: 1.2em !important;
   }
   #skillimgs{
     margin-top:5px;
@@ -150,6 +159,10 @@ body
 }
 .questrial{
   font-family: questrial;
+}
+.opensans{
+  font-family: "Open Sans";
+  font-weight: lighter;
 }
 .vis {
   visibility: visible;
@@ -281,6 +294,13 @@ nav.primary ul li a:hover {
 }
 #skilldescript{
   margin-top:20%;
+  text-align: center;
+}
+#skillheading{
+  font-size: 3em;
+}
+#skilltext{
+  font-size: 1.2em;
 }
 #skillimgs{
   margin-top:10%;
@@ -330,7 +350,7 @@ nav.primary ul li a:hover {
   margin-bottom: 10px;
 }
 .abttxt{
-  font-size: 1.5vw;
+  font-size: 1.3em;
 }
 .tech{
   max-width: 20%;
@@ -342,6 +362,7 @@ nav.primary ul li a:hover {
 }
 .projdiv{
   height: 100vh;
+  width: 100vw;
 }
 .proj{
   margin-top:20px;
@@ -408,8 +429,11 @@ overflow:hidden;
   height: 12vh;
   transition: height 0.2s ease, margin-left 0.2s ease;
 }
+#projtitle{
+  font-size: 3em;
+}
 .projtitle{
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 .contactdiv{
   height: 100px;
