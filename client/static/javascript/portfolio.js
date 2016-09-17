@@ -53,7 +53,6 @@ $(document).ready(fontsize)
     }
     else{
       $(".projlinkimg").removeClass(".hovershake")
-      $(".spacer").hide()
     }
     $('#name, #title, #down1, #nav').removeClass("banner-hidden")
     $('#name, #title, #down1, #nav').addClass('vis')
