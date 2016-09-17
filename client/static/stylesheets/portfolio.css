@@ -19,7 +19,7 @@ body
 }
 
 /*mobile responsiveness*/
-@media(max-width: 768px){
+@media only screen and (max-width: 768px) and (orientation: portrait){
   #banner{
     background-attachment: scroll !important;
   }
@@ -371,7 +371,7 @@ overflow:hidden;
 .projlinkimg{
   height: 70px;
 }
-.projlinkimg:hover{
+.hovershake:hover{
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
