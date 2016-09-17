@@ -382,6 +382,7 @@ nav.primary ul li a:hover {
   width: 30%;
   max-height: 60vh;
   margin-left: 35%;
+  margin-top: 3%;
   box-shadow: 10px 10px 5px #006D65;
   border-radius: 10px;
 }
