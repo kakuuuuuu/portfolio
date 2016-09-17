@@ -5,6 +5,12 @@
 /*removing scrollbar space*/
 body
 {
+    background-image: url('../images/smBanner.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -92,7 +98,7 @@ body
   .projtext{
     font-size: 1.2em !important;
   }
-  .spacer, .downproj{
+  .downproj{
     display: none !important;
     visibility: hidden;
   }
@@ -264,18 +270,15 @@ nav.primary ul li a:hover {
 }
 #banner{
   height: 100vh;
-  background-image: url('../images/smBanner.jpg');
-  background-size: 100%;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: transparent;
 }
 #slide01{
+  background-color: white;
   height: auto;
   min-height: 100vh;
 }
 #slide02{
+  background-color: white;
   height: auto;
   min-height: 100vh;
 }
@@ -286,13 +289,15 @@ nav.primary ul li a:hover {
   margin-top:10%;
 }
 #slide03{
+  background-color: white;
   height: auto;
   min-height: 210vh;
 }
 #contact{
+  background-color: white;
   height: 100vh;
 }
-#spacer1{
+/*#spacer1{
   background-image: url('../images/spacer1.jpg');
 }
 #spacer2{
@@ -300,15 +305,12 @@ nav.primary ul li a:hover {
 }
 #spacer3{
   background-image: url('../images/spacer3.jpg');
-}
+}*/
 .spacer{
   height: 18vh;
   width: 100vw;
   background-size: 100%;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: transparent;
 }
 .center{
   text-align: center;
