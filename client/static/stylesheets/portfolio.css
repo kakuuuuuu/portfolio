@@ -24,6 +24,12 @@ body
     margin-top: 36% !important;
   }
 }
+@media only screen and (orientation: landscape){
+  .spacer{
+    display: none !important;
+    visibility: hidden;
+  }
+}
 @media only screen and (max-width: 768px){
   #banner{
     background-attachment: scroll !important;
