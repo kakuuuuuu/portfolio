@@ -25,8 +25,15 @@ body
   }
 }
 @media only screen and (orientation: landscape){
-  .abtpictures{
-    margin: 10% auto !important;
+  .abtpictures, #skillimgs{
+    margin: auto 10% !important;
+  }
+  .abtpic{
+    width: 46vmin !important;
+    height: 46vmin !important;
+  }
+  .tech{
+    max-width: 20% !important;
   }
 }
 @media only screen and (max-width: 768px){
