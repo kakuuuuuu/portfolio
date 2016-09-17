@@ -47,13 +47,13 @@ $(window).scroll(function(){
 
 $(document).ready(fontsize)
   $(document).ready(function(){
-    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      $("#abttitle, .about, .abtpic, #down2, .tech, .techtext, #down3, #getoutcarousel, .getouttext, #projtitle, #down4, #forgeimg, #forgetext, #down5, #mapsharecarousel, .mapsharetext, #down6, #ioscarousel, .iostext, #down7, #contacttitle, .contactdiv").hide()
-
-    }
-    else{
-      $(".projlinkimg").removeClass(".hovershake")
-    }
+    // if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //   $("#abttitle, .about, .abtpic, #down2, .tech, .techtext, #down3, #getoutcarousel, .getouttext, #projtitle, #down4, #forgeimg, #forgetext, #down5, #mapsharecarousel, .mapsharetext, #down6, #ioscarousel, .iostext, #down7, #contacttitle, .contactdiv").hide()
+    //
+    // }
+    // else{
+    //   $(".projlinkimg").removeClass(".hovershake")
+    // }
     $('#name, #title, #down1, #nav').removeClass("banner-hidden")
     $('#name, #title, #down1, #nav').addClass('vis')
     $('#down1, #abtbtn').click(function(){

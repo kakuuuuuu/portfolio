@@ -45,47 +45,51 @@
                 </ul>
         </nav>
     </div>
-    <div id='main'>
-      <div id='banner' class='row'>
-        <div class='col-md-12 container vcenter'>
+    <div id='main' class='parallax'>
+      <div id='banner' class='parallax__group'>
+        <div id='banner-background' class='parallax__layer parallax__layer--back'>
+
+        </div>
+        <div class='col-md-12 container vcenter parallax__layer parallax__layer--base'>
           <h1 id='name' class='questrial banner-hidden'>Kyle Tsuyemura</h1>
           <h2 id='title' class='questrial banner-hidden'>Web Developer</h2>
           <input id='down1' class='down banner-hidden' type='image' src='images/down-arrow.png' />
         </div>
       </div>
-      <div id='slide01' class='row'>
-
-        <div class='col-md-5 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 module'>
-          <h1 id='abttitle' class='section questrial '>About Me</h1>
-          <div class='about'>
-            <p class='abttxt questrial'>
-              Hello! My name is Kyle and I am a <span class='teal'>Full Stack Web Developer</span>, who was until recently studying Electrical Engineering at University of California, Davis.  Some friends suggested I try my hand at programming as a change of pace and I instantly fell in love with it.  I decided to make the transition into web development and since then I have conquered several stacks of technology.  I haven't regretted that decision even for a moment and I'm eager to continue learning more!
-            </p>
-            <p class='abttxt questrial'>
-              Aside from coding I have a large passion for music, which is also where my hobbies in dance and DJing stem from.  When I'm not doing either of those, you'll probably find me playing video games.
-            </p>
+      <div id='slide01' class='parallax__group'>
+        <div id='abt-background' class='parallax__layer parallax__layer--back'></div>
+        <div id='abt-content' class='parallax__layer parallax__layer--base'>
+          <div class='col-md-5 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 module'>
+            <h1 id='abttitle' class='section questrial '>About Me</h1>
+            <div class='about'>
+              <p class='abttxt questrial'>
+                Hello! My name is Kyle and I am a <span class='teal'>Full Stack Web Developer</span>, who was until recently studying Electrical Engineering at University of California, Davis.  Some friends suggested I try my hand at programming as a change of pace and I instantly fell in love with it.  I decided to make the transition into web development and since then I have conquered several stacks of technology.  I haven't regretted that decision even for a moment and I'm eager to continue learning more!
+              </p>
+              <p class='abttxt questrial'>
+                Aside from coding I have a large passion for music, which is also where my hobbies in dance and DJing stem from.  When I'm not doing either of those, you'll probably find me playing video games.
+              </p>
+            </div>
+          </div>
+          <div class='abtpictures col-md-5 col-sm-12 col-xs-12 container module'>
+            <div class='col-md-5  col-md-offset-1 col-sm-3 col-xs-6'>
+              <img class='abtpic' id='profile' src='images/profile.png' alt='profile' />
+            </div>
+            <div class='col-md-5  col-md-offset-1 col-sm-3 col-xs-6'>
+              <img class='abtpic' id='dance' src='images/dance.jpg' alt='dance' />
+            </div>
+            <div class='col-md-5 col-md-offset-1 col-sm-3 col-xs-6'>
+              <img class='abtpic' id='code' src='images/code.png' alt='code' />
+            </div>
+            <div class='col-md-5 col-md-offset-1 col-sm-3 col-xs-6'>
+              <img class='abtpic' id='code' src='images/controller.jpg' alt='controller' />
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-12 module'>
+              <input id='down2' class='down' type='image' src='images/down-arrow.png' />
+            </div>
           </div>
         </div>
-        <div class='abtpictures col-md-5 col-sm-12 col-xs-12 container module'>
-          <div class='col-md-5  col-md-offset-1 col-sm-3 col-xs-6'>
-            <img class='abtpic' id='profile' src='images/profile.png' alt='profile' />
-          </div>
-          <div class='col-md-5  col-md-offset-1 col-sm-3 col-xs-6'>
-            <img class='abtpic' id='dance' src='images/dance.jpg' alt='dance' />
-          </div>
-          <div class='col-md-5 col-md-offset-1 col-sm-3 col-xs-6'>
-            <img class='abtpic' id='code' src='images/code.png' alt='code' />
-          </div>
-          <div class='col-md-5 col-md-offset-1 col-sm-3 col-xs-6'>
-            <img class='abtpic' id='code' src='images/controller.jpg' alt='controller' />
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-12 module'>
-            <input id='down2' class='down' type='image' src='images/down-arrow.png' />
-          </div>
-        </div>
-
       </div>
       <div id='spacer1' class='spacer'></div>
       <div id='slide02' class='row'>
