@@ -22,7 +22,7 @@ body
   #banner{
     background-attachment: scroll !important;
   }
-  #navname, nav, .navscroll, .down{
+  #navname, .navscroll, .down{
     display: none !important;
     visibility: hidden;
   }
