@@ -26,7 +26,7 @@ body
 }
 @media only screen and (max-width: 768px){
   #banner{
-    background-attachment: scroll !important;
+    background-image: url('../images/smBanner.jpg') !important;
   }
   #navname, .navscroll, .down{
     display: none !important;
@@ -81,12 +81,9 @@ body
     margin-top: 0 !important;
   }
 }
-@media(max-width: 1000px){
-  #slide01,#slide02,#slide03{
-    border-bottom-style: inset !important;
-    border-bottom-color: #8D9296 !important;
-    height: auto !important;
-    min-height: 0 !important;
+@media(max-width: 1024px){
+  #banner, .spacer{
+    background-attachment: scroll !important;
   }
   .abttxt{
     font-size: 1.3em !important;
@@ -94,9 +91,21 @@ body
   .projtext{
     font-size: 1em !important;
   }
-  .spacer, .downproj{
+  .downproj{
     display: none !important;
     visibility: hidden;
+  }
+  #spacer1{
+    background-image: url('../images/iosspace1.png') !important;
+  }
+  #spacer2{
+    background-image: url('../images/iosspace2.png') !important;
+  }
+  #spacer3{
+    background-image: url('../images/iosspace3.png') !important;
+  }
+  .spacer{
+    height: 15vh !important;
   }
   .down{
     display: block; margin: 0 auto !important;
@@ -280,7 +289,7 @@ nav.primary ul li a:hover {
 }
 #banner{
   height: 100vh;
-  background-image: url('../images/smBanner.jpg');
+  background-image: url('../images/lgBanner.jpg');
   background-size: 100%;
   background-attachment: fixed;
     background-position: center;
