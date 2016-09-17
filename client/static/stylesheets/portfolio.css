@@ -240,10 +240,9 @@ nav.primary ul li a:hover {
   cursor: pointer;
 }
 .vcenter {
-  margin-top:12vh;
+  margin-top:15%;
 }
 #name{
-  margin-top: 60px;
   font-size: 6em;
   color: white;
   text-align: center;
@@ -393,8 +392,7 @@ overflow:hidden;
 }
 .downproj{
   height: 8vh;
-  margin-left: 48%;
-  margin-top: 20px;
+  margin: 5% 50%;
 }
 .down:hover{
   height: 12vh;
@@ -410,7 +408,7 @@ overflow:hidden;
 .contactimg{
   height: 10vh;
   min-height: 60px;
-  max-height: 100px;
+  max-height: 80px;
   float: left;
   margin-right: 5%;
 }
