@@ -82,6 +82,9 @@ body
   }
 }
 @media(max-width: 1024px){
+  #slide01, #slide02, #slide03{
+    min-height: 50vh !important; 
+  }
   #banner, .spacer{
     background-attachment: scroll !important;
   }
