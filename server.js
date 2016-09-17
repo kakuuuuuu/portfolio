@@ -12,6 +12,6 @@ app.use(express.static(__dirname + "/client/static"))
 var routes_setter = require('./server/config/routes.js');
 routes_setter(app);
 
-app.listen(8000,function(){
-  console.log('Portfolio on port 8000')
+app.listen(7000,function(){
+  console.log('Portfolio on port 7000')
 })
