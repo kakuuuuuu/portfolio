@@ -75,7 +75,10 @@ body
     height: 40vmin !important;
   }
   .tech{
-    margin-bottom: 10%;
+    margin-bottom: 10% !important;
+  }
+  .projpic{
+    margin-top: 0 !important;
   }
 }
 @media(max-width: 1000px){
@@ -371,6 +374,7 @@ nav.primary ul li a:hover {
 .projpic{
   max-width: 95%;
   max-height:100%;
+  margin-top: 3%;
   box-shadow: 10px 10px 5px #006D65;
   border-radius: 10px;
 }
