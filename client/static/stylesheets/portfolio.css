@@ -83,7 +83,7 @@ body
 }
 @media(max-width: 1024px){
   #slide01, #slide02, #slide03{
-    min-height: 50vh !important; 
+    min-height: 50vh !important;
   }
   #banner, .spacer{
     background-attachment: scroll !important;
@@ -94,7 +94,7 @@ body
   .projtext{
     font-size: 1em !important;
   }
-  .downproj{
+  .downproj, .down{
     display: none !important;
     visibility: hidden;
   }
@@ -127,8 +127,13 @@ body
     text-align: center;
   }
   #skilldescript{
-    text-align: center !important;
-    margin-top: 2% !important;
+    margin-top: 12% !important;
+  }
+  .abtpictures{
+    margin-top: 10% !important;
+  }
+  .skillimgs{
+    margin-top: 10% !important;
   }
   #skillheading{
     font-size: 2.5em !important;
@@ -292,7 +297,7 @@ nav.primary ul li a:hover {
 }
 #banner{
   height: 100vh;
-  background-image: url('../images/lgBanner.jpg');
+  background-image: url('../images/header.png');
   background-size: 100%;
   background-attachment: fixed;
     background-position: center;
@@ -328,10 +333,10 @@ nav.primary ul li a:hover {
   height: 100vh;
 }
 #spacer1{
-  background-image: url('../images/spacer1.jpg');
+  background-image: url('../images/lgBanner.jpg');
 }
 #spacer2{
-  background-image: url('../images/spacer2.jpg');
+  background-image: url('../images/spacer4.jpg');
 }
 #spacer3{
   background-image: url('../images/spacer3.jpg');
