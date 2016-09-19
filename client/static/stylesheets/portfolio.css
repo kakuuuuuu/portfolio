@@ -2,6 +2,34 @@
   margin: 0px;
   padding: 0px;
 }
+
+@media only screen and (max-width: 600px){
+  .brand-logo{
+    margin-left: 0 !important;
+  }
+  #technology{
+    min-height:50vh !important;
+  }
+  #name{
+    font-size: 3.3em !important;
+  }
+  #title{
+    font-size: 2.5em !important;
+  }
+  .abouttext{
+    font-size: 1.08em !important;
+  }
+  #projecttitle{
+    text-align: center !important;
+  }
+  .projgif{
+    width: 100% !important;
+  }
+  .parallax-container{
+    height: 20vh !important;
+  }
+}
+
 /*removing scrollbar space*/
 body
 {
@@ -17,161 +45,41 @@ body
   -webkit-scrollbar { width: 0 !important }
 
 }
-
-/*mobile responsiveness*/
-@media only screen and (orientation: portrait){
-  .vcenter{
-    margin-top: 36% !important;
-  }
+.blackfont{
+  color:black !important;
+  transition: color 0.5s ease;
 }
-@media only screen and (max-width: 768px){
-  #banner{
-    background-image: url('../images/smBanner.jpg') !important;
-  }
-  #navname, .navscroll, .down{
-    display: none !important;
-    visibility: hidden;
-  }
-  .projtext{
-    font-size: 1em !important;
-  }
-  .glyphicon{
-    font-size: 1em !important;
-  }
-  .scrolledNav{
-    opacity: 1 !important;
-  }
-  .smallnav{
-    visibility: visible !important;
-    display: block !important;
-  }
-  .smalllinks{
-    font-size: 0.7em !important;
-  }
-  #name{
-    font-size: 4em !important;
-  }
-  #title{
-    font-size: 3em !important;
-  }
-  .abtpictures{
-    margin: 10% auto !important;
-  }
-  .projdiv{
-    height: auto !important;
-    padding: 5% !important;
-  }
-  #mapshareios{
-    border-bottom-style: none !important;
-    padding: 5% !important;
-  }
-  .projtitle{
-    text-align: center;
-    font-size: 2.5em !important;
-    margin-bottom: 5% !important;
-  }
-  .abtpic{
-    width: 40vmin !important;
-    height: 40vmin !important;
-  }
-  .tech{
-    margin-bottom: 10% !important;
-  }
-  .projpic{
-    margin-top: 0 !important;
-  }
+.whitefont{
+  color: white !important;
+  transition: color 0.5s ease;
 }
-@media(max-width: 1024px){
-  #slide01, #slide02, #slide03{
-    min-height: 50vh !important;
-  }
-  #banner, .spacer{
-    background-attachment: scroll !important;
-  }
-  .abttxt{
-    font-size: 1.3em !important;
-  }
-  .projtext{
-    font-size: 1em !important;
-  }
-  .downproj, .down{
-    display: none !important;
-    visibility: hidden;
-  }
-  #spacer1{
-    background-image: url('../images/iosspace1.png') !important;
-  }
-  #spacer2{
-    background-image: url('../images/iosspace2.png') !important;
-  }
-  #spacer3{
-    background-image: url('../images/iosspace3.png') !important;
-  }
-  .spacer{
-    height: 15vh !important;
-  }
-  .down{
-    display: block; margin: 0 auto !important;
-  }
-  .projdiv{
-    border-bottom-style: inset !important;
-    border-bottom-color: #8D9296 !important;
-    border-width: 0.5 !important;
-    height: auto !important;
-  }
-  #mapshareios{
-    border-bottom-style: none !important;
-    padding: 5% !important;
-  }
-  #projtitle{
-    text-align: center;
-  }
-  #skilldescript{
-    margin-top: 12% !important;
-  }
-  .abtpictures{
-    margin-top: 10% !important;
-  }
-  .skillimgs{
-    margin-top: 10% !important;
-  }
-  #skillheading{
-    font-size: 2.5em !important;
-  }
-  #skilltext{
-    font-size: 1.2em !important;
-  }
-  #skillimgs{
-    margin-top:5px;
-  }
+.tealfont{
+  color: #4db6ac !important;
 }
-.come-in {
-  /*visibility: visible;*/
-  transform: translateY(240px);
-  animation: come-in 0.95s ease forwards;
+.clear{
+  background-color: transparent;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease;
 }
-.come-in:nth-child(odd) {
-  animation-duration: 0.8s; /* So they look staggered */
+.blue-grey{
+  opacity: 1 !important;
+  transition: background-color 0.5s ease;
 }
-/*.module{
-  visibility: hidden;
-}*/
-@keyframes come-in {
-  to { transform: translateY(0); }
+nav{
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
 }
-.economica{
-  font-family: economica;
+.noboxshadow{
+  box-shadow: none !important;
 }
-@font-face {
-  font-family: economica;
-  src: url('../fonts/Economica-Regular.ttf');
+.navtitle{
+  font-size: 1.6em;
 }
-.economica-bold{
-  font-family: economica_bold;
+.navlink{
+  font-family: 'Raleway', sans-serif;
 }
-@font-face {
-  font-family: economica_bold;
-  src: url('../fonts/Economica-Bold.ttf');
+.brand-logo{
+  margin-left: 25px;
 }
 @font-face {
   font-family: questrial;
@@ -180,320 +88,70 @@ body
 .questrial{
   font-family: questrial;
 }
-.opensans{
-  font-family: "Open Sans";
-  font-weight: lighter;
-}
-.vis {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 2s ease;
-}
-.banner-hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 2s, opacity 2s ease;
-}
-.parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.white{
-  color: white;
-  transition: color 0.5s ease;
-}
-.whitefont{
-  color: white;
-}
-.teal{
-  color: #008C82;
-}
-.black{
-  color: black;
-  transition: color 0.5s ease;
-}
-.large{
-  font-size: 20px;
-  font-family: questrial;
-  transition: font-size 0.3s ease;
-}
-.small{
-  font-size: 1em !important;
-  transition: font-size 0.5s ease;
-}
-.topNav{
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-}
-.scrolledNav{
-  background-color: white;
-  opacity: 0.95;
-  transition: background-color 0.5s ease;
-}
-.smallnav{
-  visibility: hidden;
-  display:none;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; // remove the gap so it doesn't close
- }
-
-nav.primary{
-  display: table;
-  margin: 0 auto;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-}
-
-nav.primary ul, nav.primary ul li {
-  margin: 0px;
-}
-
-nav.primary select {
-  display: none;
-  width:  100%;
-  height: 28px;
-  margin: 21px 0;
-}
-
-nav.primary ul li {
-  display: inline;
-  float: left;
-  position: relative;
-}
-
-nav.primary ul li a {
-  display: inline-block;
-  line-height: 49px;
-  padding:  0 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  background: ##999999;
-
-}
-
-nav.primary ul li a:hover {
-  background: lightgray;
-  cursor: pointer;
-}
-.vcenter {
-  margin-top:15%;
+.raleway{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
 #name{
   font-size: 6em;
-  color: white;
-  text-align: center;
+  margin-top: 15%;
 }
 #title{
-  font-size: 4em;
-  color: #92E7EF;
-  text-align: center;
+  font-size: 5em;
 }
 #banner{
-  height: 100vh;
-  background-image: url('../images/header.png');
-  background-size: 100%;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 110vh !important;
 }
-#slide01{
+#parallax-one, #parallax-two, #parallax-three{
+  height: 45vh;
+}
+#about, #technology{
   height: auto;
-  min-height: 100vh;
+  min-height: 70vh;
 }
-#slide02{
+#projects{
   height: auto;
-  min-height: 100vh;
 }
-#skilldescript{
-  margin-top:20%;
-  text-align: center;
-}
-#skillheading{
-  font-size: 3em;
-}
-#skilltext{
+.abouttext{
   font-size: 1.2em;
 }
-#skillimgs{
-  margin-top:10%;
+.abtpicdiv{
+  width: 23%;
 }
-#slide03{
+.about-picture{
+  width: 90%;
+  border-radius: 25vw;
+}
+.techimg{
+  width:100%;
+}
+#getout, #forge, #mapshare{
+  min-height: 70vh;
   height: auto;
-  min-height: 210vh;
+  border-bottom-style: groove;
 }
-#contact{
-  height: 100vh;
+#mapshare{
+  height: auto;
 }
-#spacer1{
-  background-image: url('../images/lgBanner.jpg');
-}
-#spacer2{
-  background-image: url('../images/spacer4.jpg');
-}
-#spacer3{
-  background-image: url('../images/spacer3.jpg');
-}
-.spacer{
-  height: 35vh;
-  width: 100vw;
-  background-size: 100%;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.center{
-  text-align: center;
-}
-.right{
-  text-align: right;
-}
-.section{
-  margin-top: 60px;
-}
-.abtpictures{
-  display: block;
-  margin: 5% auto;
-}
-.abtpic{
-  height: 16vw;
-  width: 16vw;
-  border-radius: 50vh;
-  margin-bottom: 10px;
-}
-.abttxt{
-  font-size: 1.3em;
-}
-.tech{
-  max-width: 20%;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-#mapshareios{
-  height: 70vh;
-}
-.projdiv{
-  height: 100vh;
-  width: 100vw;
-}
-.proj{
-  margin-top:20px;
-  height: 50%;
-}
-.projpic{
-  max-width: 95%;
-  max-height:100%;
-  margin-top: 4%;
+.projgif{
   box-shadow: 10px 10px 5px #006D65;
   border-radius: 10px;
 }
-.iosprojpic{
-  width: 30%;
-  max-height: 60vh;
-  margin-left: 35%;
-  margin-top: 4%;
-  box-shadow: 10px 10px 5px #006D65;
-  border-radius: 10px;
-}
-.carousel{
-max-height: 55vh;
-overflow:hidden;
+#iosimg{
+  height: 300px;
 }
 .projtext{
-  font-size: 1.3em;
+  margin-bottom: 5%;
 }
-.getouttext, #forgetext, .mapsharetext, .iostext{
-  padding-top: 0;
-}
-.carouselimg{
-  max-width: 100%;
-  max-height: 50%;
-}
-.projlinkimg{
-  height: 70px;
-}
-.hovershake:hover{
-  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-.projlink{
-  line-height: 70px;
-  height: 70px;
-}
-.leftalign{
-  margin-left:7%;
-}
-.carousel-control.left, .carousel-control.right {
-   background-image:none !important;
-   filter:none !important;
-}
-.down{
-  height: 10vh;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.downproj{
-  height: 8vh;
-  margin: 5% 50%;
-}
-.down:hover{
-  height: 12vh;
-  transition: height 0.2s ease, margin-left 0.2s ease;
-}
-#projtitle{
-  font-size: 3em;
-}
-.projtitle{
-  font-size: 2.3em;
+.project-link{
+  max-width: 100px;
 }
 .contactdiv{
-  height: 100px;
-  margin: 0 auto;
+  height: auto;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 .contactimg{
-  height: 10vh;
-  min-height: 60px;
-  max-height: 80px;
-  float: left;
-  margin-right: 5%;
-}
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-#contactdivs{
-  display: block;
-  margin: 10% auto;
-}
-.contactlink{
-  font-size: 1.5em;
-  text-decoration: none;
-}
-.contactlabel{
-  line-height: 80px;
-  height: 80px;
-}
-.contactlabeldiv{
-  width: 90%;
+  width: 100% !important;
 }
