@@ -157,4 +157,5 @@ nav{
 }
 .contactimg{
   width: 100% !important;
+  max-width: 120px;
 }

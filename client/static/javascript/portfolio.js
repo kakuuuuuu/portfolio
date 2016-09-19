@@ -27,6 +27,7 @@ $(document).ready(function(){
         closeOnClick: true
       });
       $(".dropdown-button").dropdown();
+      $(".materialboxed").materialbox();
       var viewportWidth = $(window).width();
       if (viewportWidth < 600) {
               $(".techdiv").removeClass("valign");
