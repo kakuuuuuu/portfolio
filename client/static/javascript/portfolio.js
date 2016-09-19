@@ -76,6 +76,38 @@ $(document).ready(function(){
         $('.button-collapse').sideNav('hide');
         return false;
       })
+      $('#getoutbtn').click(function(){
+        var targetOffset = $('#getout').offset().top - 100;
+        $('html, body').animate({
+          scrollTop: targetOffset
+        },  1000);
+        $('.button-collapse').sideNav('hide');
+        return false;
+      })
+      $('#forgebtn').click(function(){
+        var targetOffset = $('#forge').offset().top - 100;
+        $('html, body').animate({
+          scrollTop: targetOffset
+        },  1000);
+        $('.button-collapse').sideNav('hide');
+        return false;
+      })
+      $('#mapsharebtn').click(function(){
+        var targetOffset = $('#mapshare').offset().top - 100;
+        $('html, body').animate({
+          scrollTop: targetOffset
+        },  1000);
+        $('.button-collapse').sideNav('hide');
+        return false;
+      })
+      $('#iosbtn').click(function(){
+        var targetOffset = $('#mapshareios').offset().top - 100;
+        $('html, body').animate({
+          scrollTop: targetOffset
+        },  1000);
+        $('.button-collapse').sideNav('hide');
+        return false;
+      })
 });
 
 
