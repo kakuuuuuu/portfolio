@@ -101,7 +101,7 @@ $(document).ready(function(){
         return false;
       })
       $('#iosbtn').click(function(){
-        var targetOffset = $('#mapshareios').offset().top - 100;
+        var targetOffset = $('#mapios').offset().top - 100;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
