@@ -19,6 +19,9 @@
   .abouttext{
     font-size: 1.08em !important;
   }
+  .projtitle{
+    text-align: center !important;
+  }
   #projecttitle{
     text-align: center !important;
   }
@@ -129,15 +132,18 @@ nav{
 #projects{
   height: auto;
 }
+#abouttxtdiv{
+  margin-bottom: 5%;
+}
 .abouttext{
   font-size: 1.2em;
 }
 .abtpicdiv{
-  width: 23%;
+  margin-bottom: 5%;
 }
 .about-picture{
-  width: 90%;
-  border-radius: 25vw;
+  width: 100%;
+  border-radius: 50%;
 }
 #techtitle{
   font-size: 3.2em;
@@ -181,7 +187,7 @@ nav{
 .contactdiv{
   height: auto;
 
-  
+
 }
 .contactlink{
   text-decoration: none;
