@@ -104,10 +104,12 @@ nav{
 }
 #name{
   font-size: 6em;
-  margin-top: 15%;
+  font-weight: 600;
+  margin-top: 22%;
 }
 #title{
   font-size: 5em;
+  font-weight: 600;
 }
 .vis {
   visibility: visible;
