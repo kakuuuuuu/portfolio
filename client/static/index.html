@@ -4,16 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content='text/html; charset=UTF-8' />
     <meta http-equiv="Cache-Control" content="max-age=200" />
-    <title>Welcome!</title>
+    <title>Kyle Tsuyemura</title>
     <link async rel='stylesheet' type='text/css' href='stylesheets/portfolio.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
       <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script type ='text/javascript' src='javascript/portfolio.js'></script>
+    <script async type ='text/javascript' src='javascript/portfolio.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -34,7 +36,7 @@
           <li><a id='mapsharebtn' href="#!" class='blackfont'>Map Share</a></li>
           <li><a id='iosbtn' href="#!" class='blackfont'>Map Share (iOS)</a></li>
         </ul>
-        <nav class='noboxshadow'>
+        <nav class='noboxshadow banner-hidden'>
          <div class="nav-wrapper clear">
            <a href="#!" class="brand-logo navlink whitefont raleway">KT</a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">view_list</i></a>
@@ -50,8 +52,8 @@
       </div>
       <div class='valign-wrapper'>
         <div class='valign center-block'>
-          <h1 id='name' class='whitefont center-align raleway'>Kyle Tsuyemura</h1>
-          <h3 id='title' class='tealfont center-align raleway'>Web Developer</h3>
+          <h1 id='name' class='whitefont center-align raleway banner-hidden'>Kyle Tsuyemura</h1>
+          <h3 id='title' class='tealfont center-align raleway banner-hidden'>Web Developer</h3>
         </div>
       </div>
     <div class="parallax"><img src="images/header.png">
@@ -62,21 +64,21 @@
       <h2 class="header raleway">About Me</h2>
     </div>
     <div class="row container abtdiv col m12 s12">
-      <p class="abouttext grey-text text-darken-3 lighten-3 raleway">Hello! My name is Kyle and I am a Full Stack Web Developer, who was until recently studying Electrical Engineering at University of California, Davis. Some friends suggested I try my hand at programming as a change of pace and I instantly fell in love with it. I decided to make the transition into web development and since then I have conquered several stacks of technology. I haven't regretted that decision even for a moment and I'm eager to continue learning more!</p>
+      <p class="abouttext grey-text text-darken-3 lighten-3 raleway">Hello! My name is Kyle and I am a <span class='tealfont'>Full Stack Web Developer</span>, who was until recently studying Electrical Engineering at University of California, Davis. Some friends suggested I try my hand at programming as a change of pace and I instantly fell in love with it. I decided to make the transition into web development and since then I have conquered several stacks of technology. I haven't regretted that decision even for a moment and I'm eager to continue learning more!</p>
       <p class="abouttext grey-text text-darken-3 lighten-3 raleway">Aside from coding I have a large passion for music, which is also where my hobbies in dance and DJing stem from. When I'm not doing either of those, you'll probably find me playing video games.</p>
     </div>
     <div class="row container abtdiv col m12 s12 center-block">
       <div class="col m3 s6 abtpicdiv">
-        <img class='about-picture' src='images/profile.png' alt='profile' />
+        <img class='about-picture materialboxed' src='images/profile.png' alt='profile' />
       </div>
       <div class="col m3 s6 abtpicdiv">
-        <img class='about-picture' src='images/dance.jpg' alt='dance' />
+        <img class='about-picture materialboxed' src='images/dance.jpg' alt='dance' />
       </div>
       <div class="col m3 s6 abtpicdiv">
-        <img class='about-picture' src='images/code.png' alt='code' />
+        <img class='about-picture materialboxed' src='images/code.png' alt='code' />
       </div>
       <div class="col m3 s6 abtpicdiv">
-        <img class='about-picture' src='images/controller.jpg' alt='controller' />
+        <img class='about-picture materialboxed' src='images/controller.jpg' alt='controller' />
       </div>
     </div>
   </div>
@@ -84,12 +86,12 @@
     <div class="parallax"><img class='parallaximg' src="images/spacer1.jpg"></div>
   </div>
   <div id='technology' class="section row valign-wrapper">
-    <div class="techdiv row container col m5 push-m6 s12 valign">
-      <h3 class="header raleway center-align">Under The Hood</h3>
-      <h6 class="tealfont raleway center-align">Some of the technology that powers my products</h6>
+    <div class="techdiv row col m4 push-m8 s12 valign">
+      <h3 id='techtitle' class="header raleway center-align">Under The Hood</h3>
+      <h6 id='techdescript' class="tealfont raleway center-align">Some of the technology that powers my work</h6>
     </div>
-    <div class="techdiv row container col m6 pull-m5 s12 valign">
-      <div class='row col s12 valign-wrapper'>
+    <div class="techdiv row col m8 pull-m4 s12 valign">
+      <div class='techrow row col s12 valign-wrapper'>
         <div class='col s3 valign'>
           <img class='techimg' src='images/logos.png' alt='logos' />
         </div>
@@ -103,7 +105,7 @@
           <img class='techimg' src='images/angular.png' alt='angular' />
         </div>
       </div>
-      <div class='row container col s12 valign-wrapper'>
+      <div class='techrow row container col s12 valign-wrapper'>
         <div class='col s3 valign'>
           <img class='techimg' src='images/swift.png' alt='swift' />
         </div>
@@ -122,13 +124,16 @@
   <div id='parallax-two' class="parallax-container">
     <div class="parallax"><img class='parallaximg' src="images/spacer2.jpg"></div>
   </div>
-  <div id='projects' class='container row'>
-    <div class='container row col s12'>
-      <h2 id='projecttitle' class='header raleway'>Projects</h2>
+  <div id='projects' class='container'>
+    <div class='row col s12 center-align'>
+      <h2 id='projecttitle' class='raleway'>Projects</h2>
+      <p id='projectdescript' class='raleway tealfont'>
+        Passionate for creating amazing products
+      </p>
     </div>
     <div id='getout' class='row col s12'>
       <div class='row col s12'>
-        <h3 class='tealfont raleway'>Get Out</h3>
+        <h3 class='tealfont raleway projtitle'>Get Out</h3>
       </div>
       <div class='projdiv row col m6 s12'>
 
@@ -139,19 +144,21 @@
           A web app designed to help you plan out activities around a chosen location. Plots nearby requested activities or restaurants and saves them to an itinerary for later. Final plans display routes based on the order of the itinerary.
         </p>
         <div class='row'>
-          <a href='https://github.com/kakuuuuuu/dayplanner' target='_blank'><img class='project-link col s3' src=images/github.png alt='github' /></a>
+          <div class='col s3'>
+            <a href='https://github.com/kakuuuuuu/dayplanner' target='_blank'><img class='project-link' src=images/github.png alt='github' /></a>
+            <p class='project-link-label blue-grey-font center-align'>GitHub</p>
+          </div>
         </div>
       </div>
       <div class='projdiv container row col m6 s12 valign-wrapper'>
         <img class='projgif valign materialboxed' src='images/getout.gif' alt='getout' />
       </div>
     </div>
-    <div id='forge' class='container row col s12'>
+    <div id='forge' class='row col s12'>
       <div class='row col s12'>
-        <h3 class='tealfont raleway'>Forge</h3>
+        <h3 class='tealfont raleway projtitle'>Forge</h3>
       </div>
       <div class='projdiv row col m6 s12'>
-
         <p class='raleway projtext'>
           Built With: JavaScript | Node.js, Express.js | Angular.js | Twitch API | Passport | Amazon Product Advertising API
         </p>
@@ -159,19 +166,27 @@
           Previews games that you're interested in with the top available Twitch streamer and matching Amazon product listings.
         </p>
         <div class='row'>
-          <a href='https://github.com/kakuuuuuu/forge' target='_blank'><img class='project-link col s3' src=images/github.png alt='github' /></a>
-          <a href='http://leforge.co' target='_blank'><img class='project-link col s3' src='images/www.png' alt='www' /></a>
+          <div class='col s3'>
+            <a href='https://github.com/kakuuuuuu/forge' target='_blank'><img class='project-link' src=images/github.png alt='github' /></a>
+            <p class='project-link-label blue-grey-font center-align'>
+              GitHub
+            </p>
+          </div>
+          <div class='col s3'>
+            <a href='http://leforge.co' target='_blank'><img class='project-link' src='images/www.png' alt='www' /></a>
+            <p class='project-link-label blue-grey-font center-align'>
+              Link
+            </p>
+          </div>
         </div>
       </div>
       <div class='projdiv container row col m6 s12 valign-wrapper'>
         <img class='projgif valign materialboxed' src='images/forge.gif' alt='forge' />
       </div>
     </div>
-    <br>
-    <hr class="style14">
-    <div id='mapshare' class='container row col s12'>
+    <div id='mapshare' class='row col s12'>
       <div class='row col s12'>
-        <h3 class='tealfont raleway'>Map Share</h3>
+        <h3 class='tealfont raleway projtitle'>Map Share</h3>
       </div>
       <div class='projdiv row col m6 s12'>
 
@@ -181,17 +196,27 @@
         <p class='raleway projtext'>
           Designed to simplify meet ups with friends. Users can share the destination live and plot a unique direct route based on each invited users' current location.        </p>
         <div class='row'>
-          <a href='https://github.com/kakuuuuuu/MapServer' target='_blank'><img class='project-link col s3' src=images/github.png alt='github' /></a>
-          <a href='http://mapshare.co' target='_blank'><img class='project-link col s3' src='images/www.png' alt='www' /></a>
+          <div class='col s3'>
+            <a href='https://github.com/kakuuuuuu/MapServer' target='_blank'><img class='project-link' src='images/github.png' alt='github' /></a>
+            <p class='project-link-label blue-grey-font center-align'>
+              GitHub
+            </p>
+          </div>
+          <div class='col s3'>
+            <a href='http://mapshare.co' target='_blank'><img class='project-link' src='images/www.png' alt='www' /></a>
+            <p class='project-link-label blue-grey-font center-align'>
+              Link
+            </p>
+          </div>
         </div>
       </div>
       <div class='projdiv container row col m6 s12 valign-wrapper'>
         <img class='projgif valign materialboxed' src='images/mapshare.gif' alt='mapshare' />
       </div>
     </div>
-    <div id='mapios' class='container row col s12'>
+    <div id='mapios' class='row col s12'>
       <div class='row col s12'>
-        <h3 class='tealfont raleway'>Map Share (iOS)</h3>
+        <h3 class='tealfont raleway projtitle'>Map Share (iOS)</h3>
       </div>
       <div class='projdiv row col m6 s12'>
         <p class='raleway projtext'>
@@ -201,7 +226,12 @@
           Companion app to the web version of Map Share. Shares all functionality and interactivity with the web version as well as being able to provide step-by-step directions using the built in Maps app.
         </p>
         <div class='row'>
-          <a href='https://github.com/kakuuuuuu/Map-Share' target='_blank'><img class='project-link col s3' src=images/github.png alt='github' /></a>
+          <div class='col s3'>
+            <a href='https://github.com/kakuuuuuu/Map-Share' target='_blank'><img class='project-link waves-effect waves-light' src='images/github.png' alt='github' /></a>
+            <p class='project-link-label blue-grey-font center-align'>
+              GitHub
+            </p>
+          </div>
         </div>
       </div>
       <div class='projdiv container row col m6 s12 valign-wrapper'>
@@ -219,22 +249,38 @@
   </div>
   <div id='contact' class='section row container'>
     <div class='col s12 row'>
-      <h2 class='raleway center-align'>Contact</h2>
+      <h2 class='raleway center-align'>Contact Me</h2>
       <h5 class='raleway center-align'></h5>
     </div>
     <div class='col s12 container row'>
-      <a href='mailto:kt.fremont@gmail.com' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/email.png' alt='mail' />
-        <p class='raleway center-align'>Email</p></a>
-      <a href='https://www.linkedin.com/in/kyle-tsuyemura' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/linkedin.png' alt='linkedin' />
-        <p class='raleway center-align'>LinkedIn</p></a>
-      <a href='https://github.com/kakuuuuuu' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/github.png' alt='github' />
-        <p class='raleway center-align'>GitHub</p></a>
-      <a href='https://soundcloud.com/kakuuuuuuu' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/soundcloud.png' alt='soundcloud' />
-        <p class='raleway center-align'>SoundCloud</p></a>
-      <a href='https://www.youtube.com/channel/UCLfqas3JNBp3BoXEbJb3iYg' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/youtube.png' alt='youtube' />
-        <p class='raleway center-align'>YouTube</p></a>
-      <a href='https://www.dropbox.com/s/jnjv0var5ajloup/Resume.pdf?dl=0' class='contactdiv col m2 s4' target='_blank'><img class='contactimg center-block' src='images/dropbox.png' alt='dropbox' />
-        <p class='raleway center-align'>Resume</p></a>
+      <div class='row col m6 s12'>
+        <div class="contactdiv col s4">
+          <a href='mailto:kt.fremont@gmail.com' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/email.png' alt='mail' />
+            <p class='blue-grey-font contact-label center-align'>Email</p></a>
+        </div>
+        <div class="contactdiv col s4">
+          <a href='https://linkedin.com/in/kyle-tsuyemura' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/linkedin.png' alt='linkedin' />
+            <p class='blue-grey-font contact-label center-align'>LinkedIn</p></a>
+        </div>
+        <div class="contactdiv col s4">
+          <a href='https://github.com/kakuuuuuu' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/github.png' alt='github' />
+            <p class='blue-grey-font contact-label center-align'>GitHub</p></a>
+        </div>
+      </div>
+      <div class='row col m6 s12'>
+        <div class="contactdiv col s4">
+          <a href='https://soundcloud.com/kakuuuuuuu' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/soundcloud.png' alt='soundcloud' />
+            <p class='blue-grey-font contact-label center-align'>SoundCloud</p></a>
+        </div>
+        <div class="contactdiv col s4">
+          <a href='https://www.youtube.com/channel/UCLfqas3JNBp3BoXEbJb3iYg' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/youtube.png' alt='youtube' />
+            <p class='blue-grey-font contact-label center-align'>Youtube</p></a>
+        </div>
+        <div class="contactdiv col s4">
+          <a href='https://www.dropbox.com/s/jnjv0var5ajloup/Resume.pdf?dl=0' class='contactlink' target='_blank'><img class='contactimg center-block' src='images/dropbox.png' alt='dropbox' />
+            <p class='blue-grey-font contact-label center-align'>Resume</p></a>
+        </div>
+      </div>
     </div>
   </div>
   </div>

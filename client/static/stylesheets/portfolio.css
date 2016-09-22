@@ -56,6 +56,10 @@ body
 .tealfont{
   color: #4db6ac !important;
 }
+.blue-grey-font{
+  color: #607d8b;
+  font-weight: bold;
+}
 .clear{
   background-color: transparent;
   box-shadow: none !important;
@@ -102,6 +106,16 @@ nav{
 #title{
   font-size: 5em;
 }
+.vis {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.banner-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s ease;
+}
 #banner{
   height: 110vh !important;
 }
@@ -125,8 +139,20 @@ nav{
   width: 90%;
   border-radius: 25vw;
 }
+#techtitle{
+  font-size: 3.2em;
+}
+#techdescript{
+  font-size: 1.2em;
+}
+.techrow{
+  margin-top: 10%;
+}
 .techimg{
   width:100%;
+}
+#projectdescript{
+  font-size: 1.2em;
 }
 #getout, #forge, #mapshare{
   min-height: 70vh;
@@ -136,9 +162,10 @@ nav{
 #mapshare{
   height: auto;
 }
+
 .projgif{
   box-shadow: 10px 10px 5px #006D65;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 .iosimg{
   width: 100%;
@@ -147,13 +174,17 @@ nav{
   margin-bottom: 5%;
 }
 .project-link{
+  width: 100%;
   max-width: 100px;
 }
+
 .contactdiv{
   height: auto;
-  color: black;
+
+  
+}
+.contactlink{
   text-decoration: none;
-  margin-bottom: 20px;
 }
 .contactimg{
   width: 100% !important;
