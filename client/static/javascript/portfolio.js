@@ -22,22 +22,6 @@ $(window).resize(function () {
     }
 });
 $(document).ready(function(){
-
-//   var options = [
-// {selector: '#staggered-test', offset: 50, callback: function(el) {
-//   Materialize.toast("This is our ScrollFire Demo!", 1500 );
-// } },
-// {selector: '#staggered-test', offset: 205, callback: function(el) {
-//   Materialize.toast("Please continue scrolling!", 1500 );
-// } },
-// {selector: '#staggered-test', offset: 400, callback: function(el) {
-//   Materialize.showStaggeredList($(el));
-// } },
-// {selector: '#image-test', offset: 500, callback: function(el) {
-//   Materialize.fadeInImage($(el));
-// } }
-// ];
-// Materialize.scrollFire(options);
       $('.parallax').parallax();
       $(".button-collapse").sideNav({
         menuWidth: 200,
@@ -105,7 +89,7 @@ $(document).ready(function(){
         $("#technology").addClass("valign-wrapper")
       }
       $('.aboutbtn').click(function(){
-        var targetOffset = $('#about').offset().top - 100;
+        var targetOffset = $('#about').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -113,7 +97,7 @@ $(document).ready(function(){
         return false;
       })
       $('.aboutbtn').click(function(){
-        var targetOffset = $('#about').offset().top - 100;
+        var targetOffset = $('#about').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -121,7 +105,7 @@ $(document).ready(function(){
         return false;
       })
       $('.techbtn').click(function(){
-        var targetOffset = $('#technology').offset().top - 100;
+        var targetOffset = $('#technology').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -129,7 +113,7 @@ $(document).ready(function(){
         return false;
       })
       $('.projbtn').click(function(){
-        var targetOffset = $('#projects').offset().top - 100;
+        var targetOffset = $('#projects').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -137,7 +121,7 @@ $(document).ready(function(){
         return false;
       })
       $('.contactbtn').click(function(){
-        var targetOffset = $('#contact').offset().top - 100;
+        var targetOffset = $('#contact').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -145,7 +129,7 @@ $(document).ready(function(){
         return false;
       })
       $('#getoutbtn').click(function(){
-        var targetOffset = $('#getout').offset().top - 100;
+        var targetOffset = $('#getout').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -153,7 +137,7 @@ $(document).ready(function(){
         return false;
       })
       $('#forgebtn').click(function(){
-        var targetOffset = $('#forge').offset().top - 100;
+        var targetOffset = $('#forge').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -161,7 +145,7 @@ $(document).ready(function(){
         return false;
       })
       $('#mapsharebtn').click(function(){
-        var targetOffset = $('#mapshare').offset().top - 100;
+        var targetOffset = $('#mapshare').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
@@ -169,7 +153,7 @@ $(document).ready(function(){
         return false;
       })
       $('#iosbtn').click(function(){
-        var targetOffset = $('#mapios').offset().top - 100;
+        var targetOffset = $('#mapios').offset().top - 64;
         $('html, body').animate({
           scrollTop: targetOffset
         },  1000);
