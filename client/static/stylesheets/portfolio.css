@@ -125,11 +125,10 @@ nav{
   height: 110vh !important;
 }
 #parallax-one, #parallax-two, #parallax-three{
-  height: 45vh;
+  height: 230px;
 }
 #about, #technology{
   height: auto;
-  min-height: 70vh;
 }
 #projects{
   height: auto;
@@ -182,7 +181,6 @@ nav{
   font-size: 1.2em;
 }
 #getout, #forge, #mapshare{
-  min-height: 70vh;
   height: auto;
   border-bottom-style: groove;
 }
