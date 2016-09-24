@@ -21,6 +21,22 @@ $(window).resize(function () {
     }
 });
 $(document).ready(function(){
+
+//   var options = [
+// {selector: '#staggered-test', offset: 50, callback: function(el) {
+//   Materialize.toast("This is our ScrollFire Demo!", 1500 );
+// } },
+// {selector: '#staggered-test', offset: 205, callback: function(el) {
+//   Materialize.toast("Please continue scrolling!", 1500 );
+// } },
+// {selector: '#staggered-test', offset: 400, callback: function(el) {
+//   Materialize.showStaggeredList($(el));
+// } },
+// {selector: '#image-test', offset: 500, callback: function(el) {
+//   Materialize.fadeInImage($(el));
+// } }
+// ];
+// Materialize.scrollFire(options);
       $('.parallax').parallax();
       $(".button-collapse").sideNav({
         menuWidth: 200,
@@ -30,6 +46,7 @@ $(document).ready(function(){
       $(".materialboxed").materialbox();
       $("#name, #title, nav").removeClass("banner-hidden")
       $("#name, #title, nav").addClass('vis')
+
       if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $(".project-link-label, .contact-label").hide();
       }
@@ -43,6 +60,40 @@ $(document).ready(function(){
       }, function(){
         $(this).siblings().fadeOut("slow");
       })
+      var options = [
+        {selector: '#abouttextanimation', offset: 300, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#aboutpictures', offset: 100, callback: function(el) {
+          Materialize.fadeInImage($(el));
+        } },
+        {selector: '#techimgs', offset: 100, callback: function(el) {
+          Materialize.fadeInImage($(el));
+        } },
+        {selector: '#techanimation', offset: 200, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#projtitleanimation', offset: 300, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#getoutanimation', offset: 100, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#forgeanimation', offset: 200, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#mapshareanimation', offset: 200, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#iosanimation', offset: 200, callback: function(el) {
+          Materialize.showStaggeredList($(el));
+        } },
+        {selector: '#contactimgs', offset: 100, callback: function(el) {
+          Materialize.fadeInImage($(el));
+        } },
+      ];
+
+      Materialize.scrollFire(options);
       var viewportWidth = $(window).width();
       if (viewportWidth < 600) {
               $(".techdiv").removeClass("valign");
