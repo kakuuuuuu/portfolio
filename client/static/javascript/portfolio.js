@@ -2,11 +2,12 @@
 $(window).scroll(function(){
   if($(this).scrollTop()>50){
     $('.nav-wrapper').removeClass("clear").addClass("blue-grey", 500)
-    $('nav').removeClass("noboxshadow")
+    $('.navlink').removeClass('blackfont').addClass('whitefont')
   }
   else{
     $('.nav-wrapper').removeClass("blue-grey").addClass("clear", 500)
-    $('nav').addClass("noboxshadow")
+    $('.navlink').removeClass('whitefont').addClass('blackfont')
+
   }
 })
 $(window).resize(function () {

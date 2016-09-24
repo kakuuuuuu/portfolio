@@ -45,7 +45,8 @@ body
 }
 #main{
   overflow-x: hidden;
-  -webkit-scrollbar { width: 0 !important }
+  background-image: url("images/header.png")
+  -webkit-scrollbar { width: 0 !important };
 
 }
 .blackfont{
@@ -64,8 +65,8 @@ body
   font-weight: bold;
 }
 .clear{
-  background-color: transparent;
-  box-shadow: none !important;
+  background-color: #cfd8dc;
+  /*box-shadow: none !important;*/
   transition: background-color 0.5s ease;
 }
 .blue-grey{
@@ -79,9 +80,6 @@ nav{
 }
 .side-nav{
   z-index: 11;
-}
-.noboxshadow{
-  box-shadow: none !important;
 }
 .navtitle{
   font-size: 1.6em;
